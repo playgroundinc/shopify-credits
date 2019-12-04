@@ -27,6 +27,8 @@ $(function () {
       playBtn.innerHTML = 'Return to Top';
       playing = false;
       clearInterval(scrollInterval);
+    } else {
+      playBtn.innerHTML = playing ? 'Pause' : 'Play';
     }
 
   };
